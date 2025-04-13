@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardian Tales Guides</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <header class="top-banner">
+    <img src="src/img/guardguide.png" alt="Guardian Tales Guides" />
+  </header>
+
+  <nav class="menu">
+    <button onclick="showTab('pve')">PvE</button>
+    <button onclick="showTab('coliseu')">Coliseu</button>
+    <button onclick="showTab('arena')">Arena</button>
+    <button onclick="showTab('raid')">Raid</button>
+    <button onclick="showTab('kamazon')">Kamazon</button>
+    <button onclick="showTab('builds')">Builds</button>
+  </nav>
+
+  <main>
+    <h2 id="ranking-title">Ranking - PvE</h2>
+
+    <div id="ranking-tab">
+      <table>
+        <thead>
+          <tr>
+            <th>Posição</th>
+            <th>Guardião</th>
+            <th>Classe</th>
+            <th>Tier</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-body"></tbody>
+      </table>
+    </div>
+
+    <div id="builds-tab" style="display: none;">
+      <div class="guardian-abilities">
+        <div class="build-header">
+          <img src="src/img/Future_princess.png" alt="Future Princess" class="hero-icon">
+          <h2>Build - Future Princess</h2>
+          <h4>{Buff de grupo: +40% de Vida Máxima}</h4>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/atk-melee_icon.png" alt="Controle Dimensional" class="build-icon">
+          <div>
+            <strong>Habilidade normal:</strong><br />
+            <em>Controle Dimensional:</em> Ataca com cajado à distância ou corpo a corpo com escudo, dependendo do posicionamento. Provoca inimigos próximos e aumenta a DEF dos aliados por 5s.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/chain-fp_icon.png" alt="Skills da FP" class="build-icon">
+          <div>
+            <strong>Chain Skill (Ferido → Caído):</strong><br />
+            Cria uma explosão de energia mágica que derruba o inimigo e causa dano em área.<br /><br />
+            <strong>Habilidade Especial:</strong><br />
+            Conjura uma barreira mágica que absorve 3 ataques e aumenta a DEF do grupo em 10%.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/passive-icon.png" alt="Time Acceleration" class="build-icon">
+          <div>
+            <strong>Passiva:</strong><br />
+            Ao usar habilidades, acelera a recarga das habilidades dos aliados e aumenta sua velocidade de movimento por 2s.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/ex-fp_icon.png" alt="EX Weapon" class="build-icon">
+          <div>
+            <strong>Arma EX - Liberator:</strong><br />
+            Ataca com feixes dimensionais que curam aliados em 2% do HP e têm chance de infligir dano bônus.
+          </div>
+        </div>
+      
+        <div class="best-slot">
+          <h3>Equipamentos Recomendados (Best in Slot)</h3>
+          <div class="gear-row">
+            <img src="src/img/ex-fp_icon.png" title="92.4%" />
+            <img src="src/img/equip_fp_alt1.png" title="2.6%" />
+            <img src="src/img/equip_fp_alt2.png" title="1.2%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/ring_fp.png" title="51.8%" />
+            <img src="src/img/ring_alt.png" title="13.4%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/shild_best.png" title="77.1%" />
+            <img src="src/img/shild_alternative.png" title="6.8%" />
+          </div>
+        </div>
+      </div>
+      <div class="guardian-abilities">
+        <div class="build-header">
+          <img src="src/img/oghma.png" alt="Oghma" class="hero-icon">
+          <h2>Build - Oghma</h2>
+          <h4>{Buff de grupo: +50% de Defesa}</h4>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/atk-melee_icon.png" alt="Ataque do Oghma" class="build-icon">
+          <div>
+            <strong>Habilidade normal:</strong><br />
+            Dispara rajadas com seu canhão de ombro, causando dano em linha reta aos inimigos. Causa dano físico e empurra os oponentes.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/chain-oghma_icon.png" alt="Chain Skill" class="build-icon">
+          <div>
+            <strong>Chain Skill (Ferido → Derrubado):</strong><br />
+            Lança uma onda de choque com o canhão que derruba os inimigos e reduz sua resistência.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/passive-icon.png" alt="Passiva" class="build-icon">
+          <div>
+            <strong>Passiva:</strong><br />
+            Aumenta a DEF de todos os aliados e reduz o dano recebido. Ideal para proteger o time.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/ex_oghma.png" alt="EX Weapon Oghma" class="build-icon">
+          <div>
+            <strong>Arma EX - Century:</strong><br />
+            Dispara uma salva de mísseis que causa dano em área e aplica debuff de ataque nos inimigos.
+          </div>
+        </div>
+      
+        <div class="best-slot">
+          <h3>Equipamentos Recomendados (Best in Slot)</h3>
+          <div class="gear-row">
+            <img src="src/img/ex_oghma.png" title="91%" />
+            <img src="src/img/equip_oghma_alt1.png" title="5%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/ring_oghma.png" title="40%" />
+            <img src="src/img/ring_alt.png" title="15%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/shield_oghma.png" title="72%" />
+            <img src="src/img/shield_alt.png" title="12%" />
+          </div>
+        </div>
+      </div>      
+      <div class="guardian-abilities">
+        <div class="build-header">
+          <img src="src/img/Marina.png" alt="Marina" class="hero-icon">
+          <h2>Build - Marina</h2>
+          <h4>{Buff de grupo: +50% de Defesa de Luz}</h4>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/atk-melee_icon.png" alt="Ataque da Marina" class="build-icon">
+          <div>
+            <strong>Habilidade normal:</strong><br />
+            Marina ataca com sua lança elétrica, causando dano contínuo em área e aplicando lentidão nos inimigos.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/chain-marina_icon.png" alt="Chain Skill" class="build-icon">
+          <div>
+            <strong>Chain Skill (Ferido → Derrubado):</strong><br />
+            Cria uma descarga elétrica massiva que derruba os inimigos e reduz seu ataque por alguns segundos.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/passive-icon.png" alt="Passiva" class="build-icon">
+          <div>
+            <strong>Passiva:</strong><br />
+            Aumenta sua própria resistência a status negativos e gera um escudo após usar habilidades.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/ex_marina.png" alt="EX Weapon Marina" class="build-icon">
+          <div>
+            <strong>Arma EX - Trident:</strong><br />
+            Conjura uma tempestade elétrica ao atacar, causando dano em área e reduzindo a resistência dos inimigos à luz.
+          </div>
+        </div>
+      
+        <div class="best-slot">
+          <h3>Equipamentos Recomendados (Best in Slot)</h3>
+          <div class="gear-row">
+            <img src="src/img/ex_marina.png" title="88%" />
+            <img src="src/img/equip_marina_alt1.png" title="6%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/ring_marina.png" title="35%" />
+            <img src="src/img/ring_alt.png" title="17%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/shield_marina.png" title="69%" />
+            <img src="src/img/shield_alt.png" title="11%" />
+          </div>
+        </div>
+      </div>
+      <div class="guardian-abilities">
+        <div class="build-header">
+          <img src="src/img/craig.png" alt="Craig" class="hero-icon">
+          <h2>Build - Craig</h2>
+          <h4>{Buff de grupo: +40% de Vida Máxima}</h4>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/atk-melee_icon.png" alt="Ataque do Craig" class="build-icon">
+          <div>
+            <strong>Habilidade normal:</strong><br />
+            Craig golpeia com seu martelo sagrado, causando dano físico em área e provocando os inimigos próximos.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/chain-craig_icon.png" alt="Chain Skill" class="build-icon">
+          <div>
+            <strong>Chain Skill (Ferido → Derrubado):</strong><br />
+            Invoca a luz divina para derrubar os inimigos e aumentar a resistência dos aliados.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/passive-icon.png" alt="Passiva" class="build-icon">
+          <div>
+            <strong>Passiva:</strong><br />
+            Reduz o dano recebido com base na quantidade de inimigos próximos. Quanto mais inimigos, maior a redução.
+          </div>
+        </div>
+      
+        <div class="ability-box">
+          <img src="src/img/ex_craig.png" alt="EX Weapon Craig" class="build-icon">
+          <div>
+            <strong>Arma EX - Sacred Hammer:</strong><br />
+            Causa ondas de choque que empurram os inimigos e curam uma pequena porcentagem do HP do grupo.
+          </div>
+        </div>
+      
+        <div class="best-slot">
+          <h3>Equipamentos Recomendados (Best in Slot)</h3>
+          <div class="gear-row">
+            <img src="src/img/ex_craig.png" title="90%" />
+            <img src="src/img/equip_craig_alt1.png" title="5%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/ring_craig.png" title="37%" />
+            <img src="src/img/ring_alt.png" title="16%" />
+          </div>
+          <div class="gear-row">
+            <img src="src/img/shield_craig.png" title="74%" />
+            <img src="src/img/shield_alt.png" title="12%" />
+          </div>
+        </div>
+      </div>
+            
+                   
+  </main>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
