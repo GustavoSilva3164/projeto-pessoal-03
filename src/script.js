@@ -1,5 +1,5 @@
 const basePersonagens = [
-  { nome: "Future Princess", classe: "Tank", img: "src/img/Future_princess.png" },
+  { nome: "Future Princess", classe: "Tank", img: "src/img/Future_Princess.png" },
   { nome: "Oghma", classe: "Tank", img: "src/img/oghma.png" },
   { nome: "Marina", classe: "Tank", img: "src/img/Marina.png" },
   { nome: "Craig", classe: "Tank", img: "src/img/craig.png" },
