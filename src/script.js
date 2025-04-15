@@ -13,13 +13,13 @@ const basePersonagens = [
   { nome: "Arabelle", classe: "Ranged DPS", img: "src/img/Arabelle.png" },
   { nome: "Miya", classe: "Support", img: "src/img/Miya.png" },
   { nome: "Eleanor", classe: "Support", img: "src/img/eleanor.png" },
-  { nome: "Gabriel", classe: "Support", img: "src/img/gabriela.png" },
+  { nome: "Gabriela", classe: "Support", img: "src/img/gabriela.png" },
   { nome: "Verónica", classe: "Support", img: "src/img/veronica.png" }
 ];
 
 const tierData = {
-  pve:     ["S", "S", "A", "B", "A", "A", "B", "B", "S", "S", "A", "B", "A", "S", "A", "C"],
-  coliseu: ["S", "A", "A", "B", "B", "A", "B", "C", "C", "B", "B", "B", "A", "A", "A", "C"],
+  pve:     ["S", "A", "A", "A", "S", "A", "B", "B", "B", "B", "A", "B", "S", "B", "A", "C"],
+  coliseu: ["S", "A", "A", "S", "B", "A", "B", "C", "C", "B", "B", "B", "A", "A", "A", "C"],
   arena:   ["S", "A", "B", "C", "S", "S", "A", "B", "S", "A", "A", "B", "C", "A", "B", "C"],
   raid:    ["B", "S", "B", "D", "S", "S", "A", "B", "S", "B", "S", "A", "B", "A", "A", "C"],
   kamazon: ["A", "A", "A", "A", "A", "B", "B", "C", "A", "B", "B", "B", "S", "A", "A", "B"]
